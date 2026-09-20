@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2A1F3D">
+  <title>Hisaab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="lock-screen" class="lock">
+  <div class="lock-inner">
+    <div class="lock-mark">◎</div>
+    <h1 id="lock-title">PIN banao</h1>
+    <p id="lock-hint" class="lock-hint">4 digit PIN enter karo</p>
+    <div id="pin-dots" class="pin-dots"><span></span><span></span><span></span><span></span></div>
+    <p id="lock-error" class="lock-error"></p>
+    <div id="keypad" class="keypad">
+      <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
+      <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
+      <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
+      <span></span><button data-key="0">0</button>
+      <button data-key="back" aria-label="Delete">⌫</button>
+    </div>
+  </div>
+</section>
+
+<main id="app" class="app" hidden>
+  <header class="topbar">
+    <div>
+      <h1 class="brand">Hisaab</h1>
+      <p class="brand-sub">Ghar ka income &amp; expense</p>
+    </div>
+    <button id="lock-btn" class="pill-btn">🔒 Lock</button>
+  </header>
+
+  <section class="balance-panel">
+    <p class="balance-label">Total balance</p>
+    <p id="total-balance" class="balance-amount">₹0</p>
+    <p id="total-sub" class="balance-sub"></p>
+  </section>
+
+  <section class="month-row">
+    <div class="month-card tone-income"><p>Is mahine ki income</p><strong id="month-income">₹0</strong></div>
+    <div class="month-card tone-expense"><p>Is mahine ka expense</p><strong id="month-expense">₹0</strong></div>
+  </section>
+  <p id="month-name" class="month-name"></p>
+
+  <section class="accounts-section">
+    <h2>Accounts</h2>
+    <div id="accounts" class="accounts-grid"></div>
+  </section>
+
+  <section class="other-money-section">
+    <h2>Other Money</h2>
+    <div class="other-money-grid">
+      <div class="money-card" id="udhar-card">
+        <div class="money-icon">🤝</div>
+        <div class="money-info">
+          <div class="money-title">Udhar</div>
+          <strong id="udhar-lena">₹0</strong>
+          <div class="money-note">Money to receive</div>
+        </div>
+      </div>
+
+      <div class="money-card" id="held-card">
+        <div class="money-icon">📦</div>
+        <div class="money-info">
+          <div class="money-title">Held for Others</div>
+          <strong id="held-total">₹0</strong>
+          <div class="money-note">Not your income</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="other-details">
+      <div class="card">
+        <div class="pair">
+          <div class="pair-item"><p>Mujhe lena hai</p><strong id="udhar-lena-detail">₹0</strong></div>
+          <div class="pair-item"><p>Mujhe dena hai</p><strong id="udhar-dena">₹0</strong></div>
+        </div>
+        <ul id="udhar-list" class="people"></ul>
+      </div>
+      <div class="card">
+        <ul id="held-list" class="people"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="section-head">
+      <h2>Monthly breakdown</h2>
+      <button id="all-months-btn" class="text-btn">History</button>
+    </div>
+    <div id="monthly-breakdown"></div>
+  </section>
+
+  <section class="entries-section">
+    <h2>Recent entries</h2>
+    <ul id="entries" class="entries"></ul>
+  </section>
+</main>
+
+<button id="fab" class="fab" hidden>+</button>
+
+<div id="backdrop" class="backdrop" hidden></div>
+<div id="sheet" class="sheet" hidden>
+  <div class="sheet-head">
+    <h2 id="sheet-title">Nayi entry</h2>
+    <button id="sheet-close" class="icon-btn">×</button>
+  </div>
+  <form id="entry-form">
+    <div id="type-tabs" class="type-tabs"></div>
+    <div id="sub-tabs" class="chips" hidden></div>
+
+    <div class="field">
+      <label>Amount</label>
+      <div class="amount-wrap"><span>₹</span><input id="f-amount" inputmode="decimal" placeholder="0" autocomplete="off"></div>
+    </div>
+
+    <div id="row-person" class="field" hidden>
+      <label id="person-label">Person name</label>
+      <input id="f-person" maxlength="40" placeholder="Naam likho">
+    </div>
+
+    <div id="row-category" class="field" hidden>
+      <label>Category</label><div id="category-chips" class="chips"></div>
+    </div>
+
+    <div class="field">
+      <label>Account</label><div id="account-chips" class="chips"></div>
+    </div>
+
+    <div id="row-to" class="field" hidden>
+      <label>Kaunse account mein</label><div id="to-chips" class="chips"></div>
+    </div>
+
+    <div class="field">
+      <label>Date</label>
+      <div class="date-row"><span id="date-text">Aaj</span><button type="button" id="date-toggle" class="text-btn">Date badlo</button></div>
+      <input id="f-date" type="date" hidden>
+    </div>
+
+    <div class="field">
+      <label>Note (optional)</label><input id="f-note" maxlength="120" placeholder="Kuch yaad rakhna hai?">
+    </div>
+
+    <p id="form-error" class="form-error"></p>
+    <button class="save-btn" type="submit">Save karo</button>
+  </form>
+</div>
+
+<div id="month-modal" class="modal" hidden>
+  <div class="modal-card">
+    <div class="sheet-head"><h2 id="month-modal-title">Month</h2><button id="month-modal-close" class="icon-btn">×</button></div>
+    <div id="month-modal-content"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+<script type="module" src="script.js"></script>
+</body>
+</html>

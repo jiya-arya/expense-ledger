@@ -1,0 +1,253 @@
+:root{
+  --ink:#2A1F3D;
+  --bg:#F7F5FA;
+  --card:#FFFFFF;
+  --muted:#766F82;
+  --line:#E8E3ED;
+  --income:#23845B;
+  --income-bg:#EAF7F0;
+  --expense:#C94A55;
+  --expense-bg:#FDECEE;
+  --accent:#6F5AA8;
+  --accent-soft:#EEEAF7;
+  --shadow:0 10px 30px rgba(42,31,61,.08);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif}
+button,input{font:inherit}
+button{cursor:pointer}
+h1,h2,strong,.brand,.balance-amount{font-family:"Bricolage Grotesque",sans-serif}
+.app{width:min(760px,100%);margin:auto;padding:18px 16px 100px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+.brand{font-size:32px;margin:0;font-weight:800}
+.brand-sub{margin:2px 0 0;color:var(--muted);font-size:13px}
+.pill-btn,.text-btn,.icon-btn{border:0;background:none;color:var(--ink)}
+.pill-btn{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 13px;box-shadow:0 4px 15px rgba(42,31,61,.05)}
+.balance-panel{background:var(--ink);color:white;border-radius:24px;padding:25px 22px;margin-bottom:12px;box-shadow:var(--shadow)}
+.balance-label{margin:0 0 5px;opacity:.7;font-size:13px}
+.balance-amount{font-size:42px;margin:0;font-weight:800}
+.balance-sub{margin:7px 0 0;opacity:.75;font-size:13px}
+.month-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.month-card{border-radius:18px;padding:16px;border:1px solid var(--line);background:#fff}
+.month-card p{margin:0 0 8px;font-size:12px;color:var(--muted)}
+.month-card strong{font-size:21px}
+.tone-income{background:var(--income-bg);border-color:#D6EFE1}
+.tone-income strong{color:var(--income)}
+.tone-expense{background:var(--expense-bg);border-color:#F7D8DC}
+.tone-expense strong{color:var(--expense)}
+.month-name{font-size:12px;color:var(--muted);margin:8px 2px 14px}
+.card,.entries-section{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;margin:12px 0}
+h2{font-size:19px;margin:0 0 14px}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.muted{color:var(--muted);font-size:12px}
+.account-row,.entry-row,.person-row,.month-row-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.account-row:last-child,.entry-row:last-child,.person-row:last-child,.month-row-item:last-child{border-bottom:0}
+.account-name,.entry-title{font-weight:700}
+.account-type,.entry-meta,.person-meta{font-size:12px;color:var(--muted);margin-top:3px}
+.account-amount{font-weight:700}
+.positive{color:var(--income)} .negative{color:var(--expense)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pair-item{background:var(--accent-soft);padding:13px;border-radius:15px}
+.pair-item p{margin:0 0 5px;font-size:12px;color:var(--muted)}
+.pair-item strong{font-size:20px;color:var(--accent)}
+.people,.entries{list-style:none;margin:8px 0 0;padding:0}
+.held-total{display:block;font-size:26px;margin:10px 0;color:var(--accent)}
+.month-row-item{cursor:pointer}
+.month-stats{display:flex;gap:12px;font-size:12px;color:var(--muted)}
+.entry-actions{display:flex;gap:5px}
+.small-btn{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 8px;color:var(--ink)}
+.type-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:16px}
+.type-tab,.chip{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 8px;color:var(--ink)}
+.type-tab.active,.chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.type-tab.income.active{background:var(--income);border-color:var(--income)}
+.type-tab.expense.active{background:var(--expense);border-color:var(--expense)}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.field{margin:15px 0}.field label{display:block;font-size:12px;color:var(--muted);margin-bottom:7px;font-weight:700}
+input{width:100%;border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px 13px;outline:none;color:var(--ink)}
+input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.amount-wrap{display:flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:0 13px}
+.amount-wrap span{font-size:20px;font-weight:700}.amount-wrap input{border:0;padding:14px 8px;font-size:25px;font-family:"Bricolage Grotesque"}
+.date-row{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:12px;padding:12px 13px}
+.text-btn{font-weight:700;color:var(--accent)}
+.save-btn{width:100%;border:0;border-radius:14px;padding:14px;background:var(--ink);color:#fff;font-weight:700;margin-top:5px}
+.backdrop{position:fixed;inset:0;background:rgba(20,15,30,.45);z-index:20}
+.sheet{position:fixed;z-index:21;left:50%;bottom:0;transform:translateX(-50%);width:min(760px,100%);max-height:92vh;overflow:auto;background:var(--bg);border-radius:25px 25px 0 0;padding:18px 16px 28px;box-shadow:0 -20px 60px rgba(0,0,0,.2)}
+.sheet-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.sheet-head h2{margin:0}.icon-btn{font-size:28px;line-height:1;padding:3px 8px}
+.fab{position:fixed;right:20px;bottom:22px;width:58px;height:58px;border:0;border-radius:50%;background:var(--ink);color:#fff;font-size:34px;line-height:1;box-shadow:0 12px 30px rgba(42,31,61,.3);z-index:10}
+.lock{min-height:100vh;display:grid;place-items:center;background:var(--bg);padding:20px}
+.lock-inner{text-align:center;width:min(350px,100%)}
+.lock-mark{font-size:55px;color:var(--ink);font-family:"Bricolage Grotesque"}
+.lock h1{font-size:30px;margin:8px 0}.lock-hint{color:var(--muted);font-size:13px}
+.pin-dots{display:flex;justify-content:center;gap:12px;margin:22px 0}
+.pin-dots span{width:13px;height:13px;border-radius:50%;border:2px solid var(--ink)}
+.pin-dots span.filled{background:var(--ink)}
+.lock-error,.form-error{color:var(--expense);min-height:18px;font-size:12px}
+.keypad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.keypad button{height:58px;border:1px solid var(--line);border-radius:16px;background:#fff;color:var(--ink);font-size:21px;font-weight:700}
+.keypad button:active{background:var(--accent-soft)}
+.modal{position:fixed;inset:0;background:rgba(20,15,30,.45);z-index:30;display:grid;place-items:end center}
+.modal-card{width:min(760px,100%);max-height:88vh;overflow:auto;background:var(--bg);border-radius:25px 25px 0 0;padding:18px 16px 30px}
+.detail-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.detail-box{padding:12px;border-radius:13px;background:#fff;border:1px solid var(--line)}
+.detail-box small{display:block;color:var(--muted);font-size:11px}.detail-box strong{font-size:17px}
+.category-line{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:13px}
+[hidden]{display:none!important}
+@media(max-width:430px){.type-tabs{grid-template-columns:repeat(2,1fr)}.month-row{grid-template-columns:1fr}.balance-amount{font-size:36px}.app{padding-left:12px;padding-right:12px}}
+
+
+/* ===== Screenshot-style Hisaab account layout ===== */
+:root{
+  --hisaab-maroon:#6D2E46;
+  --hisaab-bg:#F7F8F5;
+  --hisaab-card:#FFFFFF;
+  --hisaab-text:#292929;
+  --hisaab-muted:#777777;
+  --hisaab-border:#E6E6E3;
+  --hisaab-icon-bg:#F5F6F3;
+  --hisaab-purple:#8B68E8;
+  --hisaab-blue:#1988D5;
+  --hisaab-green:#58B95A;
+}
+
+body{
+  background:var(--hisaab-bg);
+  color:var(--hisaab-text);
+}
+
+.app{
+  width:min(1190px,100%);
+  padding:18px 22px 110px;
+}
+
+.topbar{
+  border-top:6px solid var(--hisaab-maroon);
+  border-radius:0 0 28px 28px;
+  padding:15px 0 18px;
+}
+
+.brand{color:var(--hisaab-maroon)}
+.brand-sub{color:var(--hisaab-muted)}
+
+.balance-panel{
+  background:var(--hisaab-maroon);
+  border-radius:22px;
+}
+
+.accounts-section h2,
+.other-money-section h2{
+  font-size:29px;
+  margin:26px 0 18px;
+  color:var(--hisaab-text);
+}
+
+.accounts-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+
+.account-card{
+  min-height:104px;
+  background:var(--hisaab-card);
+  border:1px solid var(--hisaab-border);
+  border-radius:24px;
+  padding:22px 18px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  box-shadow:0 9px 28px rgba(30,30,30,.055);
+}
+
+.account-icon,
+.money-icon{
+  width:56px;
+  height:56px;
+  min-width:56px;
+  border-radius:18px;
+  background:var(--hisaab-icon-bg);
+  display:grid;
+  place-items:center;
+  font-size:29px;
+}
+
+.account-icon.google-charu{
+  color:#000;
+  font-size:25px;
+}
+.account-icon.google-me{
+  color:#000;
+  font-size:25px;
+}
+
+.account-info{min-width:0}
+.account-name{
+  color:#656565;
+  font-family:"DM Sans",sans-serif;
+  font-size:16px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.account-amount{
+  display:block;
+  margin-top:3px;
+  color:#111;
+  font-family:"Bricolage Grotesque",sans-serif;
+  font-size:23px;
+}
+
+.other-money-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.money-card{
+  min-height:118px;
+  background:var(--hisaab-card);
+  border:1px solid var(--hisaab-border);
+  border-radius:24px;
+  padding:22px 18px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+  box-shadow:0 9px 28px rgba(30,30,30,.055);
+}
+
+.money-title{
+  color:#656565;
+  font-size:17px;
+}
+.money-info strong{
+  display:block;
+  color:#111;
+  font-family:"Bricolage Grotesque",sans-serif;
+  font-size:23px;
+  margin-top:2px;
+}
+.money-note{
+  color:#777;
+  font-size:13px;
+  margin-top:2px;
+}
+
+.other-details{
+  display:none;
+}
+
+.card,.entries-section{
+  border-radius:22px;
+}
+
+@media(max-width:760px){
+  .accounts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .other-money-grid{grid-template-columns:1fr}
+}
+
+@media(max-width:500px){
+  .app{padding-left:14px;padding-right:14px}
+  .accounts-grid{grid-template-columns:1fr}
+  .account-card,.money-card{min-height:92px;padding:17px}
+  .accounts-section h2,.other-money-section h2{font-size:25px}
+}
