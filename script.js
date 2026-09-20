@@ -14,7 +14,7 @@ const entriesRef = collection(db, "entries");
 const ACCOUNTS = [
   "Charu's Google account", "My Google account", "Cash", "Gullak 1 (college fee)", "Gullak 2 (saving)", "Crochet income"
 ];
-const INCOME_CATEGORIES = ["Tuition", "Crochet", "Gift / Family / Relative"];
+const INCOME_CATEGORIES = ["Tuition", "Crochet", "Mehendi", "Gift / Family / Relative"];
 const EXPENSE_CATEGORIES = ["Bus pass recharge", "Phone recharge", "Mummy / Papa ko diya", "Khana", "Transport (auto)", "Order", "Crochet saman", "Mandir saman", "Ghar ka saman", "Other"];
 const TYPES = ["income", "expense", "udhar", "held", "transfer"];
 const TYPE_LABELS = { income: "Income", expense: "Expense", udhar: "Udhar", held: "Held", transfer: "Transfer" };
