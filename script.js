@@ -932,12 +932,12 @@ async function saveEntry(event) {
   let usedEntry = null;
 
   // Automatically calculate how much held money the expense uses.
-<<<<<<< HEAD
+// <<<<<<< HEAD
   // Agar kisi ke held paise is account mein hain aur poora shortfall cover kar sakte hain,
   // toh automatically "Used" entry banegi. Warna expense normal save hoga
   // aur account balance minus mein ja sakta hai.
-=======
->>>>>>> a5c5cfe82b5b56b29d3169b074618d66ed94b8e1
+// =======
+// >>>>>>> a5c5cfe82b5b56b29d3169b074618d66ed94b8e1
   if (selectedType === "expense" && !editingId) {
     const personalBalance = accountBalance(selectedAccount);
     const shortfall = Math.max(
@@ -959,7 +959,7 @@ async function saveEntry(event) {
       ].filter(person =>
         heldBalanceForPerson(person, selectedAccount) >= shortfall
       );
-<<<<<<< HEAD
+// <<<<<<< HEAD
 
       if (people.length > 0) {
         let person;
@@ -1001,7 +1001,7 @@ async function saveEntry(event) {
         };
       }
       // people.length === 0 -> koi error nahi, expense normal save hoga (balance minus ho sakta hai)
-=======
+// =======
 
       if (people.length === 0) {
         error.textContent =
@@ -1049,7 +1049,7 @@ async function saveEntry(event) {
         createdAt: now,
         updatedAt: now
       };
->>>>>>> a5c5cfe82b5b56b29d3169b074618d66ed94b8e1
+// >>>>>>> a5c5cfe82b5b56b29d3169b074618d66ed94b8e1
     }
   }
 
