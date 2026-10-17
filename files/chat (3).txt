@@ -1,0 +1,254 @@
+expense
+from acc crochet income  category Crochet saman
+[8/21/26,  60 rs wool
+[8/26/26,  140 rs wool
+[9/2/26, 75 rs polythene 
+[9/5/26, 103 rs fevi bond 
+4th oct  196 rs keychain 
+10 oct Cocochet party 
+340 rs momos and all 
+70 rs juice 
+130 cake
+50 petty
+[10/13/26, 40 rs wool 
+15 sep
+260 rs wool 
+20 rs eyes
+45 rs wool 
+
+savings
+[9/6/26, 1500 rs fee gullak ( cash )
+[9/6/26, 10:44:55 PM] Charu: 200 rs cash ( fees gullak)
+[9/6/26, 10:45:16 PM] Charu: 500 rs cash 
+50 rs cash ( saving gullak)
+[9/11/26, 8:30:30 PM] Charu: 500 rs (fees gullak)
+50 rs (fees gullak )
+
+papa
+[8/16/26, 5:34:38 PM] Charu: 166 rs rakhi papa ji sis earings ( online )
+
+income
+[8/6/26,  300 rs mehendi Charu gpay
+[8/15/26, 7:28:02 PM] Charu: 150 rs charu mehendi cash
+
+expenses 
+curly braces wali category hai
+{Unknown}25-cash 28 july kisme gye yaad nhi h. 
+{Unknown}25-jiya gpay 29 july kisme gye yaad nhi h.
+{Unknown}60-jiya gpay 29 july kisme gye yaad nhi h.
+{Unknown}29 July 2026 40 rs jiya gpay
+{Unknown}30 July 2026 60 rs jiya gpay
+{Phone recharge} 28 July charu gpay 299 rs phone recharge of charu Phone recharge
+{Junk} [7/31/26, 25 rs kurkure 30 july cash 
+{Phone recharge} 300 rs jiya gpay mummy recharge 31 july 
+{Phone recharge} 200 rs chinu recharge charu gpay 31 july 
+{Transport}30 rs chinu clg to home cash 31 july 
+{Junk} 10 rs natkhat cash 31 july 
+{Junk} 10rs kurkure cash 31 july
+{Junk} 30 rs maggy  cash 31 july.
+{Transport}[8/1/26,  40 rs to clg cash
+[8/1/26, 10 rs print outs cash
+{Transport}[8/1/26, 30 clg to home cash
+{Junk} [8/2/26, 225 momo spring roll smosa
+[8/2/26,  100 charu nose koka charu gpay
+[8/2/26,  464 bus pass recharge charu gpay
+{Transport}[8/3/26,  10 rs town to manimajra cash
+{Transport}[8/3/26,  60 rs clg to home home to clg chinu gpay
+{Transport}[8/5/26, 60 rs clg to home home to clg cash
+{Junk} [8/5/26, 10 rs dairy milk cash
+{Junk} [8/5/26, 5 rs natkhat jiya gpay
+[8/5/26,  50 chinu nose ring  cash
+[8/5/26,  400 rs mummy ko diye cash
+[8/5/26,  460 bus pass recharge  cash.
+{Transport}[8/6/26, 10 rs mm to town  cash
+[8/6/26, 35 rs dahi jiya gpay
+[8/7/26,  20 rs aadi ko diye cash
+{Transport}[8/7/26, 20 rs town to mm cash
+[8/7/26, 50 rs mummy ne liye for sabzi 6 aug. cash
+[8/8/26, 130 mummy ko diye jiya gpay
+{Junk} [8/8/26, 140 momo burger noodles charu gpay
+[8/8/26, 13 rs  long charu gpay
+{Junk} [8/10/26, 497 macdonalds charu gpay
+{Junk} [8/10/26, 10 natkhat  cash
+{Junk} [8/10/26, 38 yakult nd 2 smoothie jiya gpay
+{Junk} [8/10/26, 20 smoothie  cash
+[8/10/26, 100rs panner  cash
+[8/10/26, 165 milk nd dahi charu gpay
+{Transport}[8/10/26, 40 rs to clg  cash
+{Transport}[8/11/26, 60rs chinu charu to clg cash
+10 aug 190 didi medicine charu gpay
+10 aug 20 rs charu medicine charu gpay
+{Junk} [8/11/26, 30 rs chinu dukan kitkat natkhat charu gpay
+{Transport}[8/12/26,  20rs chinu charu to mm cash
+{Junk} [8/12/26,  20 rs natkhat jiya gpay
+{Junk} [8/12/26, 20rs pepsi jiya gpay
+[8/13/26, 20 rs cash to mummy
+{Transport}[8/13/26, 10 rs town to manimajra cash
+{Transport}[8/14/26, 30 rs town to cllg charu gpay
+{Junk} [8/14/26,  35 rs momos charu gpay
+[8/14/26,  200 rs umbrella jiya gapy
+[8/15/26,  60 rs cash chocolate for tution cash
+{Junk} [8/15/26,  charu gpay 60 rs burger 3 
+{Junk} [8/15/26,  charu gpay 50 rs burger 
+{Junk} [8/15/26,  charu gpay 150 rs noodles and momos
+{Junk} [8/16/26, 50 rs juice cash
+{Transport}[8/17/26,  20 rs town to mm ( cash)
+{Transport}[8/17/26, 30 rs cllg to town( charu gpay )
+{Junk} [8/17/26,  40 rs maggie (cash )
+{Transport}18 aug 20 rs town to manimajra ( cash )
+{Junk} 18 aug 190 rs junk food( charu gpay )
+{Transport}18 aug 20 rs mm to town (cash  )
+{Junk} 18 aug 5 rs junk food ( cash )
+[8/21/26, 1500 rs mummy ko die (cash)
+[8/21/26, 662 rs charu suit (cash)
+[8/21/26, 35 rs dahi (cash)
+{Junk} [8/21/26, 10 rs namkeen (cash)
+[8/24/26,  250 rs contribution Rakhi and pads to didi ( charu gpay )
+[8/25/26, 500 rs mummy ko diye ( charu gpay )
+[8/25/26,  35 rs to mandir ( cash )
+[8/26/26,  200 rs dwai charu ( charu gpay)
+[8/26/26,  400 rs suit k liye mummy ko diye ( charu gpay)
+[8/26/26,  50 rs mummy sabji ( charu gpay )
+{Transport}[8/26/26,  30 rs to clg jiya gpay
+[8/26/26,  25 mask jiya gpay
+[8/26/26,  50 rs stall jiya gpay 
+{Transport}[8/26/26,  20 transport jiya gpay
+[8/26/26,  700 chinu suit cash
+[8/27/26,  200 rs for rakhi  jiya gpay
+26 aug  412 rs papa kurta (charu gpay)
+[8/28/26,  206 rs perfume manku bhaiya charu gpay
+{Phone recharge} [8/29/26, 200 rs recharge mummy charu gpay
+[8/30/26, 85 rs bread and chawal cash
+[8/30/26, 10 rs coffee 
+31 aug 350 rs fruits ( cash )
+[9/1/26, 52 rs shampoo and namkeen ( cash )  
+{Junk} [9/1/26, 20  rs namkeen ( cash )               
+{Junk} [9/2/26,  20 rs chips  (cash )
+[9/2/26,  1500 for pani ka bil jiya gpay
+[9/2/26, 5 rs pen cash
+{Junk} [9/2/26, 40 rs burger cash
+{Junk} [9/2/26, 60 rs momos cash
+[9/2/26, 100 rs papa ji ko diye (charu gpay )
+[9/3/26, 20 rs to mummy sabzi cash
+[9/3/26, 30 rs fruits cash
+[9/3/26, 365 rs papa ji tiffin charu gpay
+[9/4/26, 149 zepto ghr item
+[9/6/26, 600 rs wifi bill (charu gpay )
+[9/6/26, 140 cream ( charu gpay
+4 sep 2026 50 rs mandir ( cash )
+[9/6/26, 50 rs mummy tmatar ( cash )
+{Junk} [9/8/26, 10 rs chocolate cash 
+[9/8/26, 10 rs makhan cash
+{Junk} [9/8/26, 60 rs maggie charu gpay
+[9/8/26, 291 atta jiya gpay
+[9/9/26, 463 rs bus paas charu ( charu gpay)
+[9/9/26, 463 rs bus paas chinu ( charu gpay )
+{Phone recharge} [9/9/26, 299 rs phone recharge charu ( charu gpay)
+{Transport}[9/9/26,  20 rs town to manimajra ( cash )
+{Junk} [9/9/26, 21 rs chips ( charu gpay )
+[9/9/26,  30 rs mummy saman ( charu gpay)
+{Transport}10 sep  Charu to town 10 cash
+{Transport}10 sep Chinu charu to home 20 cash
+[9/11/26, 20 rs chocolate chinki and Kevin ( cash )
+[9/11/26, 100 rs mummy ( cash )
+{Transport}[9/12/26,  10 rs manimajra to town ( cash )
+[9/14/26, 130 rs face wash ( charu gpay)
+[9/14/26, 50 rs papa (charu gpay )
+{Phone recharge} [9/14/26,  550 chinu recharge jiya gpay
+[9/14/26, 200 rs mummy ( charu gpay )
+[9/14/26, 20 rs town to mm ( cash )
+{Junk} [9/14/26, 40 rs chips cllg chinu ( jiya gpay )
+{Junk} [9/14/26, 10 rs didi lays charu gpay
+{Junk} [9/14/26, 10 rs khatta mitha namkeen ( charu gpay )
+[9/14/26,  206 rs saman modak ( charu gpay)
+[9/15/26, 20 rs town to manimajra (charu gpay )
+[9/15/26, 40 rs cllg to town ( cash chinu )
+[9/15/26, 10 rs manimajra to town ( cash charu )
+[9/15/26, 30 rs sabji mummy ( charu gpay )
+[9/15/26, 200 rs papa ( charu gpay )
+[9/15/26, 20 rs town to wool shop ( cash )
+{Junk} [9/15/26, 10 rs chocos( charu gpay )
+[9/16/26,  270 ra mummy saman ( charu gpay )
+[9/17/26,  10 rs town to mm ( charu gpay )
+[9/18/26, 10 rs town to mm ( cash )
+[9/18/26,  1000 rs mummy phone combo ( charu gpay )
+9/18/26, 202 + 80 chocolates chachi bday
+9/18/26, 80 dahi milk ( charu gpay )
+[9/19/26, 100 rs mandir ( cash )
+[9/19/26, 20 rs town to mm ( charu gpay )
+[9/19/26, 173 rs books ( charu gpay)
+20 SEp 100 rs to mmy ghr ka saman cash
+{Junk} 21 sep 40 kurkure cash
+22 sep 30 to clg cash
+[9/22/26, 10 rs town to manimajra ( cash )
+{Junk} [9/22/26, 20 rs contro ( charu gpay)
+{Junk} [9/22/26, 30 rs maggie 
+[9/22/26, 35 rs dahi ( charu gpay)
+23 sep 2026 10 rs town to mm ( charu gpay )
+[9/24/26,  10 rs town to mm ( charu gpay)
+[9/24/26, 30 rs to clg cash
+[9/24/26, 35 rs dahi ( cash )
+{Junk} [9/24/26, 5 rs chiji ( cash )
+[9/24/26, 200 rs mummy milk ( cash )
+[9/25/26, 30 rs town to cllg ( cash )
+25 sep 40 rs online minecraft game  jiya gpay
+25 sep 20 rs charu online game charu gpay
+26 sep 394 jenga game  jiya gpay
+{Junk} 26 sep 154 McD chinu online jiya gpay
+26 sep 60 rs cash to home
+[9/26/26, 135 rs papa medicine 
+[9/26/26, 70 rs register ( cash )
+{Junk} [9/29/26, 40 rs maggie and chips ( cash )
+{Junk} [9/29/26, 30 rs patty charu gpay
+{Junk} [9/29/26, 20 rs kurkure ( charu gpay )
+[9/29/26, 20 rs badi 
+{Junk} [9/29/26, 30 rs chocolate ( charu gpay )
+{Phone recharge} [9/29/26, 200 rs mummy recharge ( charu gpay )
+{Junk} 30 sep 2026 314 cllg friends ( charu gpay ) 
+30 sep 2026 500 mummy ( cash )
+{Junk} [10/1/26, 200 rs burger didi contry (charu gpay )
+2 oct 20 rs copy cash
+{Transport}[10/3/26,  10 rs town to mm (cash )
+[10/3/26,  20 rs pen (cash)
+[10/3/26,  90 rs colgate and shampoo (cash)
+[10/3/26,  200 rs sheets (cash)
+[10/3/26,  100 rs milk biscuits ( cash )
+{Junk} 4th oct 65 rs maggie and biscuits ( cash )
+4th oct 500 rs mummy ( cash )
+[10/7/26, 20 rs mechanical pencil ( cash )
+{Phone recharge} 7 oct 40 rs recharge charu gpay
+[10/8/26,  60 rs tmatar mummy ( cash)
+{Transport}[10/8/26, cash 10 rs town to mm
+[10/8/26, cash 30 rs mala
+[10/8/26, cash 20 rs razor 
+[10/8/26, cash 50 rs underwear 
+{Junk} [10/8/26, cash 10 rs anar dana
+{Transport}[10/8/26, cash 10 rs mm to town
+[10/8/26, cash 70 rs medicine 
+[10/8/26, cash 70 rs vaseline lip balm 
+[10/8/26, cash 60 rs mummy 
+{Transport}9 oct 120 rs transport to clg cash
+{Junk} 9 oct 46 rs pasta clg cash 
+{Junk} 9 oct 5 rs  pufcorn cash
+[10/10/26, 100 rs mummy ( cash )
+{Junk} [10/10/26, 10 rs maggie ( charu gpay )
+{Transport}[10/10/26, 20 rs town to mm ( cash )
+[10/10/26, 80 namkeen jiya gpay
+[10/10/26, 85 rusk jiya gpay
+[10/10/26, 90 rs pen set cash
+[10/12/26, 80 rs dahi lassi jiya gpay
+{Transport}[10/12/26, 10 rs town to mm cash
+[10/12/26, 460 rs bus recharge charu cash
+[10/12/26, 35 rs namak cash )
+[10/12/26, 20 chips (cash )
+[10/13/26, 50 rs sheets cash
+[10/13/26, 100 rs mummy ( cash )
+14 oct 75 rs bus paas cash
+{Transport}14 oct 20 rs auto cash
+14 oct 20 rs print charu gpay
+{Transport}14 oct 20 rs auto charu gpay
+14 oct 121 rs milk dahi mummy cash 
+14 oct 95 rs paneer cash
+{Junk} 14 oct 20 rs pola cash
+15 oct 40 rs print 
+{Junk} 15 oct 20 rs pola 

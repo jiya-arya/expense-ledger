@@ -1,0 +1,196 @@
+<!-- //this is -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Income & Expense Ledger</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <main id="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">YOUR PERSONAL LEDGER</p>
+        <h1>Net Worth</h1>
+      </div>
+    </header>
+
+    <section class="hero-card">
+      <p>Total balance across accounts</p>
+      <h2 id="total-balance">₹0</h2>
+      <span id="total-sub">6 accounts</span>
+    </section>
+
+    <section class="summary-grid">
+      <article class="summary-card income-card">
+        <span>Income this month</span>
+        <strong id="month-income">₹0</strong>
+      </article>
+      <article class="summary-card expense-card">
+        <span>Expense this month</span>
+        <strong id="month-expense">₹0</strong>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Accounts</h2>
+      </div>
+      <div id="accounts" class="accounts-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Money tracking</h2>
+      </div>
+
+      <div class="money-grid">
+        <article class="mini-card">
+          <span>Udhar outstanding</span>
+          <strong id="udhar-lena">₹0</strong>
+        </article>
+        <article class="mini-card">
+          <span>Held for others</span>
+          <strong id="held-total">₹0</strong>
+        </article>
+      </div>
+
+      <details class="details-box">
+        <summary>Udhar entries</summary>
+        <ul id="udhar-list" class="simple-list"></ul>
+      </details>
+
+      <details class="details-box">
+        <summary>Held money entries</summary>
+        <ul id="held-list" class="simple-list"></ul>
+      </details>
+    </section>
+
+    <section class="section" id="monthly-breakdown"></section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Recent entries</h2>
+        <button id="bulk-entry-btn" class="primary-btn" type="button">
+          Bulk Entry
+        </button>
+      </div>
+      <ul id="entries" class="entries-list"></ul>
+    </section>
+  </main>
+
+  <button id="fab" class="fab" type="button" aria-label="Add entry">+</button>
+
+  <div id="backdrop" class="backdrop" hidden></div>
+
+  <section id="sheet" class="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <div class="sheet-head">
+      <h2 id="sheet-title">Add entry</h2>
+      <button id="sheet-close" class="icon-btn" type="button">×</button>
+    </div>
+
+    <form id="entry-form">
+      <div id="type-tabs" class="choice-group"></div>
+      <div id="sub-tabs" class="choice-group" hidden></div>
+
+      <div class="field">
+        <label for="f-date-text">Date</label>
+        <div class="date-input-row">
+          <input id="f-date-text" type="text" placeholder="3 Oct" required>
+          <button type="button" id="date-toggle" class="secondary-btn">
+            Calendar
+          </button>
+        </div>
+        <input id="f-date" type="date" hidden>
+        <small>Year omitted = current year.</small>
+      </div>
+
+      <div class="field">
+        <label for="f-amount">Amount (₹)</label>
+        <input id="f-amount" type="number" min="0.01" step="0.01" required placeholder="Enter amount">
+      </div>
+
+      <div id="row-category" class="field">
+        <label>Category</label>
+        <div id="category-chips" class="choice-group"></div>
+      </div>
+
+      <div id="row-person" class="field" hidden>
+        <label for="f-person">Person</label>
+        <input id="f-person" type="text" placeholder="Person's name">
+      </div>
+
+      <div class="field">
+        <label>From account</label>
+        <div id="account-chips" class="choice-group"></div>
+      </div>
+
+      <div id="row-to" class="field" hidden>
+        <label>Transfer to</label>
+        <div id="to-chips" class="choice-group"></div>
+      </div>
+
+      <div class="field">
+        <label for="f-note">Note (optional)</label>
+        <input id="f-note" type="text" maxlength="160" placeholder="Add a note">
+      </div>
+
+      <p id="form-error" class="error"></p>
+      <button class="primary-btn full-btn" type="submit">Save entry</button>
+    </form>
+  </section>
+
+<section id="bulk-modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="bulk-title">
+
+  <div class="modal-card bulk-card">
+    <div class="sheet-head">
+      <div>
+        <h2 id="bulk-title">Bulk Entry</h2>
+        <p class="muted">
+          One entry per line. Separate fields using |
+        </p>
+      </div>
+
+      <button id="bulk-close" class="icon-btn" type="button">×</button>
+    </div>
+
+    <div class="field">
+      <label for="bulk-text">Paste or type your entries</label>
+
+      <textarea id="bulk-text" rows="12"
+        placeholder="Date | Category | Type | Amount | Account | Note&#10;01-10-2026 | Tuition | income | 2000 | Cash | October fees&#10;02-10-2026 | Khana | expense | 100 | Jiya GPay | Lunch"
+        spellcheck="false"></textarea>
+    </div>
+
+    <p class="muted">
+      Format: Date | Category | Type | Amount | Account | Note
+    </p>
+
+    <p id="bulk-count">0 lines</p>
+    <p id="bulk-error" class="error"></p>
+
+    <button id="bulk-save" class="primary-btn full-btn" type="button">
+      Save All Entries
+    </button>
+  </div>
+</section>
+
+  <section id="month-modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="month-modal-title">
+    <div class="modal-card">
+      <div class="sheet-head">
+        <h2 id="month-modal-title">Monthly history</h2>
+        <button id="month-modal-close" class="icon-btn" type="button">×</button>
+      </div>
+      <div id="month-modal-content"></div>
+    </div>
+  </section>
+
+  <div id="toast" class="toast" hidden role="status"></div>
+</body>
+
+</html>
